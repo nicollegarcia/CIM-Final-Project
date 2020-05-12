@@ -1,0 +1,236 @@
+img {
+  max-width: 100%;
+}
+
+
+   .grid4 {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-areas:
+      "left grid right"
+      }
+
+   .grid3 {
+     grid-area: grid;
+     display: grid;
+     width: 20%;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 15px;
+     grid-template-rows: auto auto auto;
+     grid-template-areas:
+      "fbthumb IGthumb emailthumb"
+      "fbtext igtext emailtext"
+      }
+
+      footer{
+        grid-area: footer;
+        padding-top: 14px;
+        text-align: center;
+        color: black;
+      }
+
+   .gridmain {
+     text-align: center;
+     padding-top: 30px;
+     display: grid;
+
+     /* grid-row-gap: 200px; */
+     grid-template-columns: auto;
+     grid-template-rows: auto auto auto auto auto auto auto;
+     grid-template-areas:
+      "homesec"
+      "biosec"
+      "photos"
+      "music"
+      "events"
+      "contact"
+      "footer";
+    }
+
+body {
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.container {
+  margin: auto;
+}
+.navbar {
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+#homesec {
+  grid-area: homesec;
+}
+#biosec {
+  grid-area: biosec;
+  width: 50%;
+}
+.biotext{
+  font-family: 'Roboto', sans-serif;
+}
+#photos {
+  grid-area: photos;
+}
+#music {
+
+ grid-area: music;
+}
+
+.vid{
+  max-width: 100%;
+}
+
+#events {
+  grid-area: events;
+}
+#contact {
+  grid-area: contact;
+  text-align: center;
+}
+#contact img {
+  width: 30%;
+}
+
+.section1 {
+  grid: section1;
+  background-image: url(file:///Users/nicollegarcia/Desktop/piano.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 30px;
+  height: 100%;
+}
+
+.section1text{
+color: white;
+}
+
+.section2 {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.info1,.info2, .info3, .fbtext, .igtext, .emailtext{
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  font-size: 36px;
+  margin-bottom: 11px;
+}
+
+.pic1 {
+  grid-area: pic1
+}
+.info1 {
+  grid-area: info1
+}
+.pic2 {
+  grid-area: pic2
+}
+.info2 {
+  grid-area: info2
+}
+.pic3 {
+  grid-area: pic3
+}
+.info3 {
+  grid-area: info3
+}
+
+.gridImages{
+width: 70%;
+margin: 0 auto;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom: 40px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-row-gap: 10px;
+grid-column-gap: 10px;
+}
+
+.gridImages a img{
+  width: 100%;
+}
+
+.gridImages div{
+  max-width: 300px;
+}
+
+.grid2 {
+  display: grid;
+  /* grid-row-gap: 200px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+   "pic1 pic2 pic3"
+   "info1 info2 info3"
+   }
+
+   .left{
+     grid-area: left;
+   }
+
+   .right{
+     grid-area: right;
+   }
+
+   .fbthumb {
+     grid-area: fbthumb
+   }
+   .fbtext {
+     grid-area: fbtext
+   }
+   .IGthumb {
+     grid-area: IGthumb
+   }
+   .igtext {
+     grid-area: igtext
+   }
+   .emailthumb {
+     grid-area: emailthumb
+   }
+   .emailtext {
+     grid-area: emailtext
+   }
+
+
+
+/* .gridImages
+{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridImages a img
+{
+width: 100%
+
+} */
