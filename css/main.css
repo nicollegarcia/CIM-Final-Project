@@ -116,7 +116,7 @@ body {
 
 .section1 {
   grid: section1;
-  background-image: url(file:///Users/nicollegarcia/Desktop/piano.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url(file:///Users/nicollegarcia/Downloads/Updated%20CIM%20Final/img/piano.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
